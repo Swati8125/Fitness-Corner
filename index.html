@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swati's Fitness</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+body{
+    
+    color:blanchedalmond;
+   /* padding:0px;
+    margin:0px;*/
+    background-image: url('./images/fitness.jpg');
+    background-size: cover ;
+    background-position: 100% 100%;
+    font-family: 'Goldman', cursive;
+    
+    
+}
+
+.left{
+   /*border: 2px solid red;*/
+   display: inline-block;
+   position:absolute;
+   top:30px;
+   left:44px;
+   
+}
+
+.mid{
+  /* border:2px solid chocolate;*/
+   border-radius: 24px;
+   display:block;
+   width:45%;
+   margin:auto;
+   margin-top: 20px;
+}
+
+.right{
+   /*border: 2px solid green;*/
+   display:inline-block;
+   position:absolute;
+   top:30px;
+   right:44px;
+}
+
+.navbar li{
+    display:inline-block;
+    font-size: 19px;
+    font-family: 'Goldman', cursive;
+    
+}
+.navbar li a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    cursor:pointer;
+    margin:12px;
+}
+.navbar li a:hover,.navbar li a:active{
+    color:rgb(253, 5, 5);
+    text-decoration: underline;
+}
+.left img{
+    width:100px;
+    height:100px;
+}
+
+.btn{
+    margin:12px;
+    border:2px solid #ebeaf1;
+    border-radius: 14px;
+    cursor:pointer;
+    font-size: 20 px;
+    font-family: 'Goldman', cursive;
+
+}
+.btn:hover{
+    background-color: rgb(146, 230, 230);
+}
+
+.container{
+  /* border:2px solid greenyellow;*/
+    border-radius: 14px;
+    margin: 150px;
+    padding: 33px;
+    width:333px;
+}
+
+.form button:hover{
+    cursor:pointer;
+    background-color: aquamarine;
+}
+
+
+</style>
+<body>
+    <header class="header">
+        <!--Left Box for Logo-->
+        <div class="left">
+      <img src="./images/logo fitness.jpg">
+      <div>Swati's  Fitness</div>
+        </div>
+        <!--Mid Box for Navigation Menu Bar -->
+        <div class="mid">
+         
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Club</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                
+        </div>
+       <!--Right Box for Buttons-->
+        <div class="right">
+         <button class="btn">Call Us Now</button>
+         <button class="btn">Email Us</button>
+        </div>
+        
+    </header>
+    <div class="container">
+        <h1>Join the best Gym of Patna Now</h1>
+        <form action="backend.php">
+            <div class="form">
+            <div>
+                <label>First Name:</label><br>
+            <input type="text" name="fname" id="name" placeholder="Enter your First Name">
+            </div>
+        
+            <br>
+        
+            <div>
+                <label>Last Name:</label><br>
+               <input type="text" name="lname" id="name" placeholder="Enter your Last Name">
+                </div>
+        
+                <br>
+        
+            <div>
+                <label>Your age:</label><br>
+                 <input type=" number" name="age" id="name" placeholder="Enter your Age">
+                </div>
+        
+                <br>
+            <div>
+                <label> Email Id:</label><br>
+               <input type="email" name="email" id="name" placeholder="Enter your Email Id">
+                </div>
+        
+                <br>
+        
+                <div>
+                    <label> Gender:</label><br>
+                   Male<input type="radio" name="gender" id="name" >
+                        &nbsp; 
+                        &nbsp;
+                   Female<input type="radio" name="gender" id="name" >
+                        &nbsp; 
+                        &nbsp;
+                   Other<input type="radio" name="gender" id="name" >
+                    </div>
+                    
+                    
+                  
+                   
+                  <br>
+                  <div>
+                 <button class="btn">RESET</button>
+                 <button class="btn">SUBMIT</button>
+                  </div>
+               
+            </div>     
+        </form>
+        
+    </div>
+    
+</body>
+</html>
